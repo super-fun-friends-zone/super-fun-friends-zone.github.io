@@ -1,0 +1,126 @@
+html {
+  height: 100%; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+  height: 100%;
+  background: repeating-linear-gradient(-30deg, #111, #111 10px, #333 10px, #333 20px); }
+
+h1 {
+  color: white;
+  font-family: 'Righteous', sans-serif !important;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 80px;
+  line-height: 90px;
+  margin: 0;
+  padding: 0 30px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate; }
+
+h2 {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-top: 30px;
+  color: white; }
+
+main {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 40px;
+  box-shadow: 0px 0px 14px 1px rgba(68, 68, 68, 0.2);
+  transition: all .5s ease-in-out; }
+
+p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 20px; }
+
+ul {
+  margin: 40px 0; }
+  ul li {
+    margin-bottom: 10px; }
+
+.intro {
+  text-align: center; }
+  .intro p {
+    font-size: 18px; }
+
+.sffz {
+  font-family: "Righteous", sans-serif;
+  letter-spacing: 1px; }
+
+.highlight {
+  color: #5863F8;
+  font-weight: bold; }
+
+.divider {
+  width: 50%;
+  margin: 50px auto;
+  height: 1px;
+  border-bottom: 1px solid #998FC7; }
+
+.outro {
+  text-align: center; }
+  .outro form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0; }
+    .outro form input {
+      box-sizing: border-box;
+      height: 40px; }
+    .outro form input[type="email"] {
+      height: 40px;
+      width: 300px;
+      padding: 5px 10px;
+      border: 1px solid #5863F8;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px; }
+    .outro form input[type="submit"] {
+      height: 40px;
+      border: 1px solid #5863F8;
+      font-family: "Righteous", sans-serif;
+      color: white;
+      background-color: #5863F8;
+      padding: 5px 10px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      transition: .5s all ease-in-out; }
+      .outro form input[type="submit"]:hover {
+        background-color: white;
+        color: #5863F8; }
+
+.social {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  margin: 30px auto; }
+  .social a {
+    color: white;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #5863F8, 0 0 35px #5863F8, 0 0 40px #5863F8, 0 0 50px #5863F8, 0 0 75px #5863F8; }
+    .social a:hover {
+      color: black; }
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #54DEFD, 0 0 70px #54DEFD, 0 0 80px #54DEFD, 0 0 100px #54DEFD, 0 0 150px #54DEFD; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #5863F8, 0 0 35px #5863F8, 0 0 40px #5863F8, 0 0 50px #5863F8, 0 0 75px #5863F8; } }
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #54DEFD, 0 0 70px #54DEFD, 0 0 80px #54DEFD, 0 0 100px #54DEFD, 0 0 150px #54DEFD; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #5863F8, 0 0 35px #5863F8, 0 0 40px #5863F8, 0 0 50px #5863F8, 0 0 75px #5863F8; } }
+
+/*# sourceMappingURL=main.css.map */
