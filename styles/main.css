@@ -111,22 +111,6 @@ ul {
     .social a:hover {
       color: black; }
 
-.nav {
-  text-align:center;}
-  .nav ul li{
-    list-style: none;
-    display: inline-block;
-    text-transform: uppercase;
-    margin-right: 10px;
-  }
-  .nav a {
-    color: white;
-    font-size: 18px;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #5863F8, 0 0 35px #5863F8, 0 0 40px #5863F8, 0 0 50px #5863F8, 0 0 75px #5863F8;
-    text-decoration: none; }
-  .nav a:hover {
-      color: black; }
-
 @-webkit-keyframes neon1 {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #54DEFD, 0 0 70px #54DEFD, 0 0 80px #54DEFD, 0 0 100px #54DEFD, 0 0 150px #54DEFD; }
