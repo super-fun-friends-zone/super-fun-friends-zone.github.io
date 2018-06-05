@@ -9,8 +9,10 @@ $cyan: #54DEFD;
 $neon-color: $cyan;
 $neon-color2: $blue;
 
-$body-font: "Open Sans", sans-serif;
-$title-font: "Righteous", sans-serif;
+$c-blue: #00B3E9;
+
+$body-font: "Comfortaa", sans-serif;
+$title-font: "Monoton", sans-serif;
 
 //========== MIXINS
 
@@ -20,40 +22,42 @@ $title-font: "Righteous", sans-serif;
 
 html {
   height: 100%;
+  min-height: 100%;
+  position: relative;
 }
 
 body {
   max-width: 100vw;
   height: 100%;
   font-family: $body-font;
-  background: repeating-linear-gradient(
-  -30deg,
-  #111,
-  #111 10px,
-  #333 10px,
-  #333 20px
-  );
+}
+
+.background {
+  background-image: linear-gradient(-180deg, #00B3E9 5%, #5CBCAB 50%, #F3B80B 70%, #EC94B9 97%);
+  position: fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  overflow:hidden;
+  z-index:-1;
 }
 
 h1 {
-  font-family: 'Righteous', sans-serif !important;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-family: $title-font;
+  // text-transform: uppercase;
   text-align: center;
   font-size: 80px;
   line-height: 90px;
-  margin: 10px 0 50px 0;
+  margin: 50px 0 30px 0;
   padding: 0 30px;
   color: white;
-  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
-  animation: neon1 1.5s ease-in-out infinite alternate;
 }
 
 h2 {
-  font-family: 'Open Sans';
+  font-family: $body-font;
   font-size: 18px;
-  letter-spacing: 2px;
+  // letter-spacing: 2px;
   text-align: center;
   margin-top: 30px;
   color: white;
@@ -76,6 +80,11 @@ p {
   margin-bottom: 20px;
 }
 
+a {
+  color: black;
+  font-weight: bold;
+}
+
 ul {
   margin: 40px 0;
 
@@ -93,8 +102,9 @@ ul {
 }
 
 .sffz {
-  font-family: $title-font;
-  letter-spacing: 1px;
+  // font-family: $title-font;
+  // letter-spacing: 1px;
+  color: $c-blue;
 }
 
 .highlight {
@@ -127,17 +137,17 @@ ul {
       height: 40px;
       width: 300px;
       padding: 5px 10px;
-      border: 1px solid $blue;
+      border: 1px solid $c-blue;
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;
     }
 
     input[type="submit"] {
       height: 40px;
-      border: 1px solid $blue;
-      font-family: $title-font;
+      border: 1px solid $c-blue;
+      font-family: $body-font;
       color: white;
-      background-color: $blue;
+      background-color: $c-blue;
       padding: 5px 10px;
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
@@ -145,7 +155,7 @@ ul {
 
       &:hover {
         background-color: white;
-        color: $blue;
+        color: $c-blue;
       }
     }
   }
@@ -160,31 +170,10 @@ ul {
   a {
     color: white;
     font-size: 36px;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $neon-color2, 0 0 35px $neon-color2, 0 0 40px $neon-color2, 0 0 50px $neon-color2, 0 0 75px $neon-color2;
 
     &:hover {
       color: black;
     }
-  }
-}
-
-//========== KEYFRAMES
-
-@-webkit-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $neon-color, 0 0 70px $neon-color, 0 0 80px $neon-color, 0 0 100px $neon-color, 0 0 150px $neon-color;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $neon-color2, 0 0 35px $neon-color2, 0 0 40px $neon-color2, 0 0 50px $neon-color2, 0 0 75px $neon-color2;
-  }
-}
-
-@keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px $neon-color, 0 0 70px $neon-color, 0 0 80px $neon-color, 0 0 100px $neon-color, 0 0 150px $neon-color;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px $neon-color2, 0 0 35px $neon-color2, 0 0 40px $neon-color2, 0 0 50px $neon-color2, 0 0 75px $neon-color2;
   }
 }
 
